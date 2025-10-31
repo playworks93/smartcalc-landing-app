@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
-import CalculatorDisplay from './components/CalculatorDisplay'
-import ButtonPanel from './components/ButtonPanel'
-import HistoryLog from './components/HistoryLog'
-import GraphingTool from './components/GraphingTool'
-import SettingsPanel from './components/SettingsPanel'
+import AuthComponent from './components/AuthComponent'
+import CalculatorComponent from './components/CalculatorComponent'
+import HistoryComponent from './components/HistoryComponent'
+import AnalyticsComponent from './components/AnalyticsComponent'
+import SettingsComponent from './components/SettingsComponent'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -44,11 +44,11 @@ function App() {
         <div className="features">
           <h3>Key Features:</h3>
           <ul>
-          <li>Basic Arithmetic Operations</li>
-          <li>Advanced Calculations (e.g., Trigonometry, Logarithms)</li>
-          <li>Graphing Capabilities</li>
-          <li>Collaboration Tools (e.g., share results with others)</li>
-          <li>Data Analytics and Visualization</li>
+          <li>User Authentication & Onboarding</li>
+          <li>Advanced Calculation Functions</li>
+          <li>Smart Analytics & Visualizations</li>
+          <li>Collaboration Tools for Sharing Results</li>
+          <li>History of Calculations & Favorites</li>
           <li>Customizable User Interface</li>
           </ul>
         </div>
