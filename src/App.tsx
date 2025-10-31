@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
-import Calculator from './components/Calculator'
+import CalculatorDisplay from './components/CalculatorDisplay'
+import ButtonPad from './components/ButtonPad'
 import HistoryLog from './components/HistoryLog'
-import GraphDisplay from './components/GraphDisplay'
-import CollaborationPanel from './components/CollaborationPanel'
-import Settings from './components/Settings'
+import UserProfile from './components/UserProfile'
+import GraphingTool from './components/GraphingTool'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -45,11 +45,11 @@ function App() {
           <h3>Key Features:</h3>
           <ul>
           <li>Basic Arithmetic Operations</li>
-          <li>Advanced Scientific Functions</li>
           <li>Graphing Capabilities</li>
-          <li>Collaborative Calculation Sessions</li>
-          <li>History Log for Past Calculations</li>
-          <li>Customizable User Interface</li>
+          <li>Historical Calculation Logs</li>
+          <li>Custom Formula Saving</li>
+          <li>Collaborative Sharing Options</li>
+          <li>User Authentication and Profiles</li>
           </ul>
         </div>
         <p>&copy; 2025 SmartCalc. Built with React + TypeScript + Vite</p>
