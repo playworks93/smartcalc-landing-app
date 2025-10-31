@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'basic_arithmetic_operations' ? 'active' : ''}
-          onClick={() => setActiveTab('basic_arithmetic_operations')}
+          className={activeTab === 'user_authentication_&_onboarding' ? 'active' : ''}
+          onClick={() => setActiveTab('user_authentication_&_onboarding')}
         >
-          Basic Arithmetic Operations
+          User Authentication & Onboarding
         </button>
         <button 
-          className={activeTab === 'advanced_calculations_(e.g.,_trigonometry,_logarithms)' ? 'active' : ''}
-          onClick={() => setActiveTab('advanced_calculations_(e.g.,_trigonometry,_logarithms)')}
+          className={activeTab === 'advanced_calculation_functions' ? 'active' : ''}
+          onClick={() => setActiveTab('advanced_calculation_functions')}
         >
-          Advanced Calculations (E.G., Trigonometry, Logarithms)
+          Advanced Calculation Functions
         </button>
         <button 
-          className={activeTab === 'graphing_capabilities' ? 'active' : ''}
-          onClick={() => setActiveTab('graphing_capabilities')}
+          className={activeTab === 'smart_analytics_&_visualizations' ? 'active' : ''}
+          onClick={() => setActiveTab('smart_analytics_&_visualizations')}
         >
-          Graphing Capabilities
+          Smart Analytics & Visualizations
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'basic_arithmetic_operations' && (
+        {activeTab === 'user_authentication_&_onboarding' && (
           <div className="tab-content">
-            <h2>Basic Arithmetic Operations</h2>
-            <p>Manage your basic arithmetic operations here.</p>
+            <h2>User Authentication & Onboarding</h2>
+            <p>Manage your user authentication & onboarding here.</p>
           </div>
         )}
 
-        {activeTab === 'advanced_calculations_(e.g.,_trigonometry,_logarithms)' && (
+        {activeTab === 'advanced_calculation_functions' && (
           <div className="tab-content">
-            <h2>Advanced Calculations (e.g., Trigonometry, Logarithms)</h2>
-            <p>Manage your advanced calculations (e.g., trigonometry, logarithms) here.</p>
+            <h2>Advanced Calculation Functions</h2>
+            <p>Manage your advanced calculation functions here.</p>
           </div>
         )}
 
-        {activeTab === 'graphing_capabilities' && (
+        {activeTab === 'smart_analytics_&_visualizations' && (
           <div className="tab-content">
-            <h2>Graphing Capabilities</h2>
-            <p>Manage your graphing capabilities here.</p>
+            <h2>Smart Analytics & Visualizations</h2>
+            <p>Manage your smart analytics & visualizations here.</p>
           </div>
         )}
       </div>
