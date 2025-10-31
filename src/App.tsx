@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
-import AuthComponent from './components/AuthComponent'
-import CalculatorComponent from './components/CalculatorComponent'
-import HistoryComponent from './components/HistoryComponent'
-import AnalyticsComponent from './components/AnalyticsComponent'
-import CollaborationComponent from './components/CollaborationComponent'
+import CalculatorDisplay from './components/CalculatorDisplay'
+import ButtonPanel from './components/ButtonPanel'
+import HistoryLog from './components/HistoryLog'
+import ThemeSelector from './components/ThemeSelector'
+import GraphingTool from './components/GraphingTool'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -23,7 +23,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <h1>SmartCalc</h1>
-          <p className="tagline">Revolutionizing Your Calculations</p>
+          <p className="tagline">Empower Your Calculations</p>
         </div>
         {isAuthenticated && (
           <button onClick={handleLogout} className="btn-logout">
@@ -44,12 +44,12 @@ function App() {
         <div className="features">
           <h3>Key Features:</h3>
           <ul>
-          <li>User Authentication & Onboarding</li>
-          <li>Basic Arithmetic Operations</li>
-          <li>Scientific Calculations</li>
-          <li>History of Calculations</li>
-          <li>Data Analytics & Visualization</li>
-          <li>Real-time Collaboration</li>
+          <li>Basic arithmetic operations (addition, subtraction, multiplication, division)</li>
+          <li>Scientific calculations (trigonometric functions, logarithms, exponentials)</li>
+          <li>Graphing capabilities for visualizing functions</li>
+          <li>History log to track previous calculations</li>
+          <li>Customizable themes for user interface personalization</li>
+          <li>Real-time collaboration with sharing options</li>
           </ul>
         </div>
         <p>&copy; 2025 SmartCalc. Built with React + TypeScript + Vite</p>
