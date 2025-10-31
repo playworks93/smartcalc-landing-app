@@ -4,11 +4,11 @@ SmartCalc - Built with React + TypeScript + Vite
 
 ## Features
 
-- Basic Arithmetic Operations
-- Advanced Calculations (e.g., Trigonometry, Logarithms)
-- Graphing Capabilities
-- Collaboration Tools (e.g., share results with others)
-- Data Analytics and Visualization
+- User Authentication & Onboarding
+- Advanced Calculation Functions
+- Smart Analytics & Visualizations
+- Collaboration Tools for Sharing Results
+- History of Calculations & Favorites
 - Customizable User Interface
 
 ## Tech Stack
