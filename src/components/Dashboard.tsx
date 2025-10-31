@@ -21,16 +21,16 @@ const Dashboard = (props: DashboardProps) => {
           Basic Arithmetic Operations
         </button>
         <button 
+          className={activeTab === 'advanced_calculations_(e.g.,_trigonometry,_logarithms)' ? 'active' : ''}
+          onClick={() => setActiveTab('advanced_calculations_(e.g.,_trigonometry,_logarithms)')}
+        >
+          Advanced Calculations (E.G., Trigonometry, Logarithms)
+        </button>
+        <button 
           className={activeTab === 'graphing_capabilities' ? 'active' : ''}
           onClick={() => setActiveTab('graphing_capabilities')}
         >
           Graphing Capabilities
-        </button>
-        <button 
-          className={activeTab === 'historical_calculation_logs' ? 'active' : ''}
-          onClick={() => setActiveTab('historical_calculation_logs')}
-        >
-          Historical Calculation Logs
         </button>
       </nav>
 
@@ -62,17 +62,17 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
+        {activeTab === 'advanced_calculations_(e.g.,_trigonometry,_logarithms)' && (
+          <div className="tab-content">
+            <h2>Advanced Calculations (e.g., Trigonometry, Logarithms)</h2>
+            <p>Manage your advanced calculations (e.g., trigonometry, logarithms) here.</p>
+          </div>
+        )}
+
         {activeTab === 'graphing_capabilities' && (
           <div className="tab-content">
             <h2>Graphing Capabilities</h2>
             <p>Manage your graphing capabilities here.</p>
-          </div>
-        )}
-
-        {activeTab === 'historical_calculation_logs' && (
-          <div className="tab-content">
-            <h2>Historical Calculation Logs</h2>
-            <p>Manage your historical calculation logs here.</p>
           </div>
         )}
       </div>
