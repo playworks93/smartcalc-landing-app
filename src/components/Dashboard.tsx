@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'basic_arithmetic_operations_(addition,_subtraction,_multiplication,_division)' ? 'active' : ''}
-          onClick={() => setActiveTab('basic_arithmetic_operations_(addition,_subtraction,_multiplication,_division)')}
+          className={activeTab === 'basic_calculations' ? 'active' : ''}
+          onClick={() => setActiveTab('basic_calculations')}
         >
-          Basic Arithmetic Operations (Addition, Subtraction, Multiplication, Division)
+          Basic Calculations
         </button>
         <button 
-          className={activeTab === 'scientific_calculations_(trigonometric_functions,_logarithms,_exponentials)' ? 'active' : ''}
-          onClick={() => setActiveTab('scientific_calculations_(trigonometric_functions,_logarithms,_exponentials)')}
+          className={activeTab === 'advanced_analytical_functions' ? 'active' : ''}
+          onClick={() => setActiveTab('advanced_analytical_functions')}
         >
-          Scientific Calculations (Trigonometric Functions, Logarithms, Exponentials)
+          Advanced Analytical Functions
         </button>
         <button 
-          className={activeTab === 'graphing_capabilities_for_visualizing_functions' ? 'active' : ''}
-          onClick={() => setActiveTab('graphing_capabilities_for_visualizing_functions')}
+          className={activeTab === 'real_time_collaboration' ? 'active' : ''}
+          onClick={() => setActiveTab('real_time_collaboration')}
         >
-          Graphing Capabilities For Visualizing Functions
+          Real Time Collaboration
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'basic_arithmetic_operations_(addition,_subtraction,_multiplication,_division)' && (
+        {activeTab === 'basic_calculations' && (
           <div className="tab-content">
-            <h2>Basic arithmetic operations (addition, subtraction, multiplication, division)</h2>
-            <p>Manage your basic arithmetic operations (addition, subtraction, multiplication, division) here.</p>
+            <h2>Basic Calculations</h2>
+            <p>Manage your basic calculations here.</p>
           </div>
         )}
 
-        {activeTab === 'scientific_calculations_(trigonometric_functions,_logarithms,_exponentials)' && (
+        {activeTab === 'advanced_analytical_functions' && (
           <div className="tab-content">
-            <h2>Scientific calculations (trigonometric functions, logarithms, exponentials)</h2>
-            <p>Manage your scientific calculations (trigonometric functions, logarithms, exponentials) here.</p>
+            <h2>Advanced Analytical Functions</h2>
+            <p>Manage your advanced analytical functions here.</p>
           </div>
         )}
 
-        {activeTab === 'graphing_capabilities_for_visualizing_functions' && (
+        {activeTab === 'real_time_collaboration' && (
           <div className="tab-content">
-            <h2>Graphing capabilities for visualizing functions</h2>
-            <p>Manage your graphing capabilities for visualizing functions here.</p>
+            <h2>Real-Time Collaboration</h2>
+            <p>Manage your real time collaboration here.</p>
           </div>
         )}
       </div>
