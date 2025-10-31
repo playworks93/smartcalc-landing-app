@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'user_authentication' ? 'active' : ''}
-          onClick={() => setActiveTab('user_authentication')}
+          className={activeTab === 'basic_arithmetic_functions' ? 'active' : ''}
+          onClick={() => setActiveTab('basic_arithmetic_functions')}
         >
-          User Authentication
+          Basic Arithmetic Functions
         </button>
         <button 
-          className={activeTab === 'real_time_collaborative_calculations' ? 'active' : ''}
-          onClick={() => setActiveTab('real_time_collaborative_calculations')}
+          className={activeTab === 'graphing_and_visualization_tools' ? 'active' : ''}
+          onClick={() => setActiveTab('graphing_and_visualization_tools')}
         >
-          Real Time Collaborative Calculations
+          Graphing And Visualization Tools
         </button>
         <button 
-          className={activeTab === 'advanced_analytical_tools' ? 'active' : ''}
-          onClick={() => setActiveTab('advanced_analytical_tools')}
+          className={activeTab === 'advanced_statistical_analysis' ? 'active' : ''}
+          onClick={() => setActiveTab('advanced_statistical_analysis')}
         >
-          Advanced Analytical Tools
+          Advanced Statistical Analysis
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'user_authentication' && (
+        {activeTab === 'basic_arithmetic_functions' && (
           <div className="tab-content">
-            <h2>User Authentication</h2>
-            <p>Manage your user authentication here.</p>
+            <h2>Basic Arithmetic Functions</h2>
+            <p>Manage your basic arithmetic functions here.</p>
           </div>
         )}
 
-        {activeTab === 'real_time_collaborative_calculations' && (
+        {activeTab === 'graphing_and_visualization_tools' && (
           <div className="tab-content">
-            <h2>Real-time Collaborative Calculations</h2>
-            <p>Manage your real time collaborative calculations here.</p>
+            <h2>Graphing and Visualization Tools</h2>
+            <p>Manage your graphing and visualization tools here.</p>
           </div>
         )}
 
-        {activeTab === 'advanced_analytical_tools' && (
+        {activeTab === 'advanced_statistical_analysis' && (
           <div className="tab-content">
-            <h2>Advanced Analytical Tools</h2>
-            <p>Manage your advanced analytical tools here.</p>
+            <h2>Advanced Statistical Analysis</h2>
+            <p>Manage your advanced statistical analysis here.</p>
           </div>
         )}
       </div>
