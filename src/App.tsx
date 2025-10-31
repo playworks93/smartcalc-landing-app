@@ -2,10 +2,10 @@ import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
 import CalculatorDisplay from './components/CalculatorDisplay'
-import ButtonPanel from './components/ButtonPanel'
-import HistoryLog from './components/HistoryLog'
-import ThemeSelector from './components/ThemeSelector'
-import GraphingTool from './components/GraphingTool'
+import InputPad from './components/InputPad'
+import HistoryPanel from './components/HistoryPanel'
+import SettingsModal from './components/SettingsModal'
+import CollaborationPanel from './components/CollaborationPanel'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -23,7 +23,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <h1>SmartCalc</h1>
-          <p className="tagline">Empower Your Calculations</p>
+          <p className="tagline">Empowering Your Numerical Tasks</p>
         </div>
         {isAuthenticated && (
           <button onClick={handleLogout} className="btn-logout">
@@ -44,12 +44,12 @@ function App() {
         <div className="features">
           <h3>Key Features:</h3>
           <ul>
-          <li>Basic arithmetic operations (addition, subtraction, multiplication, division)</li>
-          <li>Scientific calculations (trigonometric functions, logarithms, exponentials)</li>
-          <li>Graphing capabilities for visualizing functions</li>
-          <li>History log to track previous calculations</li>
-          <li>Customizable themes for user interface personalization</li>
-          <li>Real-time collaboration with sharing options</li>
+          <li>Basic Calculations</li>
+          <li>Advanced Analytical Functions</li>
+          <li>Real-Time Collaboration</li>
+          <li>Customizable User Interface</li>
+          <li>History and Save Functionality</li>
+          <li>Data Visualization Tools</li>
           </ul>
         </div>
         <p>&copy; 2025 SmartCalc. Built with React + TypeScript + Vite</p>
